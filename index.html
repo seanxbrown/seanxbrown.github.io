@@ -1,34 +1,28 @@
-<!DOCTYPE html lang="en">
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset ="UTF-8">
-        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>Local Storage Todo List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1">
         <link href="style.css" rel="stylesheet">
-        <title>Second Todo List</title>
     </head>
     <body>
-        <header>
-            <h1>Sean To-do List V2</h1>
-            <p>Subtitle goes here etc.</p>
-            <input type="text" placeholder="Add item" class="input-box" id="add-box">
-            <button type="submit" class="button" id="add-button">Add Item</button>
-        </header>
-        <section class="section-div" id="todo-section">
-            <ul id="todo-list">
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-
+        <div id="pageContainer">
+            <header>
+                <h1>Sean's Todo List V4</h1>
+                <p>This one will have a different markup and local storage</p>
+            </header>
+        <section id="inputContainer">
+            <input type="text" id="inputBox" placeholder="Enter Item Here">
+            <button type="submit" id="addButton">Add</button>
+        </section>
+        <section id="listContainer">
+            <ul id="todoList">
+                <li class="listItem" data-key="1001">Test Item 1</li>
+                <li class="listItem checked" data-key="1002">Test Item 2</li>
             </ul>
         </section>
-        <section class="section-div" id="colour-button-box">
-            <button class="button" id="background-button">Change Background</button>
-        </section>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
