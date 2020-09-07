@@ -1,99 +1,91 @@
-*{
+/*HTML and CSS done - focus on JS (03/09/2020*/
+* {
     padding: 0;
     margin: 0;
     box-sizing:border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #aaa;
+}
 
 header {
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
+    background-color: #006;
     color: #fff;
-    background-color:#000;
-    padding: 0 0 1rem 0;
-    /*margin: 0 0 1rem 0;*/
-}
-header:after{
-    content:"";
-    display:table;
-    clear:both;
-}
-
-input {
-    border: 0 solid none;
+    text-align:center;
     padding: 1rem;
-    width: 75%;
-    float:left;
-    margin: 0;
-    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
-button {
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    }
+
+#inputBox, #addButton {
 border: 0;
-padding: 1.3rem;
-float:left;
-transition: 0.3s;
-font-weight: bold;
+padding: 2rem;
+border-radius:2px;
 }
 
-button:hover {
-background-color:#333;
-color: white;
+#inputBox {
+width: 65%;
 }
 
-ul li {
+#addButton{
+    transition:0.1s;
+    background-color:#666;
+    font-weight:bold;
+}
+
+#addButton:hover{
+    background-color:#333;
+
+}
+
+#listContainer {
+display:flex;
+justify-content: center;
+}
+
+#todoList {
+    list-style: none;
+    width:100%;
+    text-align:center;
+}
+
+.listItem {
+padding: 0.5rem;
+background-color:#ddd;
 cursor:pointer;
 position:relative;
-font-family: 'Roboto Slab', serif;
-font-size: 18px;
-font-weight: bold;
-padding: 10px;
-background: #999;
-text-align:center;
-list-style:none;
-transition: 0.4s;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select:none;
-user-select:none;
+transition:0.3s;
 }
 
-ul li:nth-child(odd) {
-background: #fff;
+.listItem:nth-child(even){
+    background-color:#ccc;
 }
 
-ul li:hover{
-    background-color: #444;
-    color: #fff;
+.listItem:hover{
+    background-color: #666;
 }
 
-ul li.checked {
-    background: #555;
-    color:#500;
-    text-decoration: line-through;
-}
-
-ul li.checked::before{
-content: "";
-position: absolute;
-border-color:#fff;
-border-style: solid;
-border-width: 0 2px 2px 0;
-top: 10px;
-left: 16px;
-transform: rotate(45deg);
-height:15px;
-width:7px;
+.checked {
+    text-decoration:line-through; 
 }
 
 .close{
     position:absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+    right:0;
+    top:0;
+    padding:0.5rem 1rem;
+    font-weight:bold;
 }
+
 .close:hover{
-    background-color:#a00;
-    color: #fff;
+    background-color:#f00;
 }
