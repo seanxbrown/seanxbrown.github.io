@@ -9,92 +9,105 @@
     </head>
     <body>
         <section class="container-fluid" id="home">
-            <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
                 <ul class="navbar-nav text-light">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-     
                 </ul>
             </nav>
             <section id="projects">
-                <h2>Projects</h2>
-                <article class="project">
-                    <h3>React Weather Application</h3>
-                    <img src="img/react_weather.png" class="img-project"/>
-                    <a href="https://seanxbrown.github.io/react-weather-2/">Live Site</a>
-                    <a href="https://github.com/seanxbrown/react-weather-2">Github Repo</a>
-                    <p class="project-description">Application that consumes the OpenWeather API</p>
-                    <p>Technologies Used</p>
-                    <ul class="techs list-unstyled">
-                        <li>React</li>
-                        <li>React Bootstrap</li>
-                    </ul>
-                </article>
-                <article class="project">
-                    <h3>React Brewdog Application</h3>
-                    <img src="img/react_brewdog.png" class="img-project"/>
-                    <a href="https://seanxbrown.github.io/react-brewdog/">Live Site</a>
-                    <a href="https://github.com/seanxbrown/react-brewdog">Github Repo</a>
-                    <p class="project-description">Application that consumes the Brewdog API</p>
-                    <p>Technologies Used</p>
-                    <ul class="techs list-unstyled">
-                        <li>React</li>
-                        <li>React Bootstrap</li>
-                    </ul>
-                </article>
-                <article class="project">
-                    <h3>Bootstrap Brochure</h3>
-                    <img src="img/brochure_site.png" class="img-project"/>
-                    <a href="https://seanxbrown.github.io/brochure-bootstrap/">Live Site</a>
-                    <a href="https://github.com/seanxbrown/brochure-bootstrap">Github Repo</a>
-                    <p class="project-description">Brochure website for a fictional consulting company</p>
-                    <p>Technologies Used</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </article>
-                <article class="project">
-                    <h3>Youtube Clone</h3>
-                    <img src="img/youtube_clone.png" class="img-project"/>
-                    <a href="https://seanxbrown.github.io/youtube_player/">Live Site</a>
-                    <a href="https://github.com/seanxbrown/youtube_player">Github Repo</a>
-                    <p class="project-description">Youtube clone</p>
-                    <p>Technologies Used</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </article>
-                <article class="project">
-                    <h3>TNW Responsive</h3>
-                    <img src="img/tnw.png" class="img-project"/>
-                    <a href="https://seanxbrown.github.io/tnw_responsive/">Live Site</a>
-                    <a href="https://github.com/seanxbrown/tnw_responsive">Github Repo</a>
-                    <p class="project-description">Clone of a responsive news site</p>
-                    <p>Technologies Used</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </article>
-                <article class="project">
-                    <h3>Etch-a-Sketch</h3>
-                    <img src="img/sketch.png" class="img-project"/>
-                    <a href="https://seanxbrown.github.io/sketch/">Live Site</a>
-                    <a href="https://github.com/seanxbrown/sketch">Github Repo</a>
-                    <p class="project-description">Etch-a-Sketch with resiazble grid</p>
-                    <p>Technologies Used</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </article>
+                <h2 class="text-center">Projects</h2>
+                <div class="row row-cols-lg-3" id="projects-container">
+                    <article class="project col">
+                        <h3>React Weather Application</h3>
+                        <div>
+                            <img src="img/react_weather.png" class="img-project"/>
+                        </div>
+                        <a href="https://seanxbrown.github.io/react-weather-2/">Live Site</a>
+                        <a href="https://github.com/seanxbrown/react-weather-2">Github Repo</a>
+                        <p class="project-description">Application that consumes the OpenWeather API</p>
+                        <p>Technologies Used</p>
+                        <ul class="techs list-unstyled">
+                            <li>React</li>
+                            <li>React Bootstrap</li>
+                        </ul>
+                    </article>
+                    <article class="project col">
+                        <h3>React Brewdog Application</h3>
+                        <div>
+                            <img src="img/react_brewdog.png" class="img-project"/>
+                        </div>
+                        <a href="https://seanxbrown.github.io/react-brewdog/">Live Site</a>
+                        <a href="https://github.com/seanxbrown/react-brewdog">Github Repo</a>
+                        <p class="project-description">Application that consumes the Brewdog API</p>
+                        <p>Technologies Used</p>
+                        <ul class="techs list-unstyled">
+                            <li>React</li>
+                            <li>React Bootstrap</li>
+                        </ul>
+                    </article>
+                    <article class="project col">
+                        <h3>Bootstrap Brochure</h3>
+                        <div>
+                            <img src="img/brochure_site.png" class="img-project"/>
+                        </div>
+                        <a href="https://seanxbrown.github.io/brochure-bootstrap/">Live Site</a>
+                        <a href="https://github.com/seanxbrown/brochure-bootstrap">Github Repo</a>
+                        <p class="project-description">Brochure website for a fictional consulting company</p>
+                        <p>Technologies Used</p>
+                        <ul class="techs list-unstyled">
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </article>
+                    <article class="project col">
+                        <h3>Youtube Clone</h3>
+                        <div>
+                            <img src="img/youtube_clone.png" class="img-project"/>
+                        </div>
+                        <a href="https://seanxbrown.github.io/youtube_player/">Live Site</a>
+                        <a href="https://github.com/seanxbrown/youtube_player">Github Repo</a>
+                        <p class="project-description">Youtube clone</p>
+                        <p>Technologies Used</p>
+                        <ul class="techs list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </article>
+                    <article class="project col">
+                        <h3>TNW Responsive</h3>
+                        <div>
+                            <img src="img/tnw.png" class="img-project"/>
+                        </div>
+                        <a href="https://seanxbrown.github.io/tnw_responsive/">Live Site</a>
+                        <a href="https://github.com/seanxbrown/tnw_responsive">Github Repo</a>
+                        <p class="project-description">Clone of a responsive news site</p>
+                        <p>Technologies Used</p>
+                        <ul class="techs list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </article>
+                    <article class="project col">
+                        <h3>Etch-a-Sketch</h3>
+                        <div>
+                            <img src="img/sketch.png" class="img-project"/>
+                        </div>
+                        <a href="https://seanxbrown.github.io/sketch/">Live Site</a>
+                        <a href="https://github.com/seanxbrown/sketch">Github Repo</a>
+                        <p class="project-description">Etch-a-Sketch with resiazble grid</p>
+                        <p>Technologies Used</p>
+                        <ul class="techs list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </article>
+                </div>                  
             </section>
-            <section id="skills">Skills
+            <section id="skills" class="row row-cols-5">Skills
                 <article class="skill">
                     <img src="/img/HTML5_Logo_512.png">
                 </article>
