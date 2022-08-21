@@ -1,1 +1,5 @@
-ECHO is on.
+.img-project:hover {
+    cursor: pointer;
+    opacity: 80%;
+
+}
