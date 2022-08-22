@@ -2,10 +2,14 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+.img-project {
+    transition: transform 0.7s;
+}
 
 .img-project:hover {
     cursor: pointer;
     opacity: 80%;
+    transform: scale(1.05, 1.05);
 
 }
 
