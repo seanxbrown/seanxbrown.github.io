@@ -14,12 +14,18 @@
     <body class="text-light bg-dark" id="home">
         <section class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-light opacity-75 p-3">
-                <ul class="navbar-nav text-light">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav text-light">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+    
+                </div>
             </nav>
             <section id="landing">
                 <h2 class="text-center mt-5">Hi, I'm Sean</h2>
@@ -29,8 +35,8 @@
             <section id="projects">
                 <h2 class="text-center mt-5 mb-3 fw-bold">Projects</h2>
                 <div class="row" id="projects-container">
-                    <article class="project col-12 col-md-4 ">
-                        <h4 class="text-center">React Quote Collections Application</h4>
+                    <article class="project col-12 col-md-6 col-lg-4">
+                        <h4 class="text-center">React Quotes Application</h4>
                         <div>
                             <img src="img/react_quotes.png" class="img-project w-100 border border-3 border-light" />
                         </div>
@@ -50,7 +56,7 @@
                             <li>Git</li>
                         </ul>
                     </article>
-                    <article class="project col-12 col-md-4">
+                    <article class="project col-12 col-md-6 col-lg-4">
                         <h4 class="text-center">React Weather Application</h4>
                         <div>
                             <img src="img/react_weather.png" class="img-project w-100 border border-light border-3"/>
@@ -69,7 +75,7 @@
                         </ul>
                     </article>
 
-                    <article class="project col-12 col-md-4">
+                    <article class="project col-12 col-md-6 col-lg-4">
                         <h4 class="text-center">Apple UK Website Clone</h4>
                         <div>
                             <img src="img/apple_clone.png" class="img-project w-100 border border-3 border-light"/>
@@ -88,7 +94,7 @@
                         </ul>
                     </article>
 
-                    <article class="project col-12 col-md-4">
+                    <article class="project col-12 col-md-6 col-lg-4">
                         <h4 class="text-center">React Brewdog Application</h4>
                         <div>
                             <img src="img/react_brewdog.png" class="img-project w-100 border border-3 border-light"/>
@@ -107,7 +113,7 @@
                         </ul>
                     </article>
 
-                    <article class="project col-12 col-md-4">
+                    <article class="project col-12 col-md-6 col-lg-4">
                         <h4 class="text-center">Bootstrap Brochure Website</h4>
                         <div>
                             <img src="img/brochure_site.png" class="img-project w-100 border border-3 border-light"/>
@@ -125,7 +131,7 @@
                         </ul>
                     </article>
                     
-                    <article class="project col-12 col-md-4">
+                    <article class="project col-12 col-md-6 col-lg-4">
                         <h4 class="text-center">YouTube Clone</h4>
                         <div>
                             <img src="img/youtube_clone.png" class="img-project w-100 border border-3 border-light"/>
@@ -141,9 +147,7 @@
                             <li>CSS (including Flexbox)</li>
                             <li>Git</li>
                         </ul>
-                    </article>
-
-                    
+                    </article>                    
                 </div>                  
             </section>
 
@@ -174,7 +178,7 @@
             <section id="contact" className="my-5">
                 <h3 class="text-center fw-bold">Contact</h3>
                 <p class="text-center">If you have any questions or would like to send me a message, please get in touch using the link below:</p>
-                <form method="POST" action="mailto:sean.brown.90@live.co.uk" class="text-center">
+                <form method="POST" action="mailto:sean.brown.90@live.co.uk" class="text-center mb-5">
                     <button type="submit" class="btn btn-dark border border-light">Send Message</button>
                 </form>
             </section>
