@@ -31,11 +31,11 @@ body {
 }
 
 #startOfHeader {
-    transition-duration: 1s;
+    transition-duration: 2.5s;
 }
 
 #restOfHeader, .landingText {
-    transition-duration: 2s;
+    transition-duration: 4s;
 }
 
 #startOfHeader.revealText, #restOfHeader.revealText, .landingText.revealText {
