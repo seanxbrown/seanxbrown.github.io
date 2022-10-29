@@ -7,7 +7,7 @@ body {
 }
 
 .nav-link {
-    color: #fff
+    color: #FFF
 }
 
 .nav-link:hover {
@@ -17,7 +17,7 @@ body {
 #landing {
     height: 75vh;
     background-color: #000A57;
-    color: #fff;
+    color: #FFF;
     padding: 0 10vw;
 }
 
@@ -25,32 +25,23 @@ body {
     cursor: pointer;
 }
 
+.headerText, .landingText {
+    opacity: 0;
+    transition-property: opacity;
+}
+
 #startOfHeader {
-    opacity: 0;
-    transition-property: opacity;
     transition-duration: 1s;
-
 }
 
-#restOfHeader {
-    opacity: 0;
-    transition-property: opacity;
+#restOfHeader, .landingText {
     transition-duration: 2s;
 }
 
-#startOfHeader.revealText, #restOfHeader.revealText {
+#startOfHeader.revealText, #restOfHeader.revealText, .landingText.revealText {
     opacity: 1;
 }
 
-.landingText {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 2s;
-}
-
-.landingText.revealText {
-    opacity: 1;
-}
 
 .img-project {
     transition: transform 0.7s;
