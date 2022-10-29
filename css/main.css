@@ -21,6 +21,37 @@ body {
     padding: 0 10vw;
 }
 
+#landing:hover {
+    cursor: pointer;
+}
+
+#startOfHeader {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+
+}
+
+#restOfHeader {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+}
+
+#startOfHeader.revealText, #restOfHeader.revealText {
+    opacity: 1;
+}
+
+.landingText {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+}
+
+.landingText.revealText {
+    opacity: 1;
+}
+
 .img-project {
     transition: transform 0.7s;
 }
