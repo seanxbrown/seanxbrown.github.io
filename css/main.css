@@ -1,5 +1,25 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--primary)
+}
+
+#navbar {
+    background-color: #000;
+}
+
+.nav-link {
+    color: #fff
+}
+
+.nav-link:hover {
+    color:#A37E00
+}
+
+#landing {
+    height: 75vh;
+    background-color: #000A57;
+    color: #fff;
+    padding: 0 10vw;
 }
 
 .img-project {
@@ -11,6 +31,10 @@ body {
     opacity: 80%;
     transform: scale(1.05, 1.05);
 
+}
+
+#skills {
+    background-color: #000A57;
 }
 
 .skill {

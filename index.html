@@ -11,27 +11,26 @@
         <link href="/css/main.css" rel="stylesheet"/>
     </head>
 
-    <body class="text-light bg-dark" id="home">
-        <section class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-light opacity-75 p-3">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-content">
-                    <ul class="navbar-nav text-light">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <section id="landing">
-                <h2 class="text-center mt-5">Hi, I'm Sean</h2>
-                <p class="text-center w-75 mx-auto">I love using different technologies to build applications that are fun to use and solve user challenges. Most recently, I've been building different types of applications with React, making full use of features such as hooks, and routing to produce great apps.</p>
-            </section>
-
-            <section id="projects">
+    <body class="" id="home">
+        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-light p-3" id="navbar">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="landing" class="d-flex flex-column justify-content-center align-items-center">
+            <h2>Hi, I'm Sean</h2>
+            <p >I love using different technologies to build applications that are fun to use and solve user challenges.</p>
+            <p >Most recently, I've been building different types of applications with React, making full use of features such as hooks, and routing to produce great apps.</p>
+        </section>
+            <section id="projects" class="container">
                 <h2 class="text-center mt-5 mb-3 fw-bold">Projects</h2>
                 <div class="row" id="projects-container">
 
@@ -50,6 +49,7 @@
                         <ul class="techs list-unstyled">
                             <li>Javascript (inc. Fetch API)</li>
                             <li>React Hooks (state and effect)</li>
+                            <li>React Router</li>
                             <li>React Bootstrap</li>
                             <li>CSS</li>
                             <li>Git</li>
@@ -91,6 +91,7 @@
                         <ul class="techs list-unstyled">
                             <li>Javascript (inc. Fetch API)</li>
                             <li>React Hooks (state and effect)</li>
+                            <li>React Router</li>
                             <li>React Bootstrap</li>
                             <li>Git</li>
                         </ul>
@@ -154,8 +155,8 @@
                 </div>                  
             </section>
 
-            <section id="skills" className="mb-5">
-                <h2 class="text-center fw-bold">Skills</h2>
+            <section id="skills" class="mb-5 p-5">
+                <h2 class="text-center fw-bold text-light">Skills</h2>
                 <div id="skills-container" class="row text-center mt-5">
                     <article class="skill col-12 col-md-4">
                         <img src="/img/HTML5_Logo_512.png" class="w-25">
@@ -178,14 +179,13 @@
                 </div>                
             </section>
 
-            <section id="contact" className="my-5">
+            <section id="contact" class="my-5 p-5">
                 <h3 class="text-center fw-bold">Contact</h3>
                 <p class="text-center">If you have any questions or would like to send me a message, please get in touch using the link below:</p>
                 <form method="POST" action="mailto:sean.brown.90@live.co.uk" class="text-center mb-5">
                     <button type="submit" class="btn btn-dark border border-light">Send Message</button>
                 </form>
             </section>
-        </section>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
