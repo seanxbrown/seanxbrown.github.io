@@ -16,7 +16,7 @@ body {
 
 #landing {
     height: 75vh;
-    background-color: #000A57;
+    background-image: linear-gradient(to right,#000A57, #011188 );
     color: #FFF;
     padding: 0 10vw;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 #skills {
-    background-color: #000A57;
+    background-image: linear-gradient(to right,#000A57, #011188 );
 }
 
 .skill {
