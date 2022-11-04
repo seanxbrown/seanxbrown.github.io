@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden
 }
 
 #navbar {
@@ -15,7 +16,7 @@ body {
 }
 
 #landing {
-    height: 75vh;
+    height: 100vh;
     background-image: linear-gradient(to right,#000A57, #011188 );
     color: #FFF;
     padding: 0 10vw;
