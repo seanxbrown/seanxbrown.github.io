@@ -32,121 +32,140 @@
 
         <section id="projects" class="container">
             <h2 class="text-center mt-5 mb-3 fw-bold">Projects</h2>
-            <div class="row" id="projects-container">
-                <article class="project col-12 col-md-6 col-lg-4">
+            <div class="row row-cols-1" id="projects-container">
+                <article class="project col mb-5">
                     <h4 class="text-center">React Ecommerce Site</h4>
-                    <div>
-                        <img src="img/react_ecommerce.png" class="img-project w-100 border border-3 border-light"/>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
+                        <div class="col image-container" >
+                            <img src="img/react_ecommerce.png" class="img-project w-100 border border-3 border-light"/>
+                        </div>
+                        <div class="description-container align-self-center">
+                            <p class="project-description text-muted">This fully responsive app combines browser routing with state to deliver a single page application that allows users to add/remove items from a basket and navigate to other pages without losing that basket content.</p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item">Javascript</li>
+                                <li class="list-inline-item">React (inc. hooks and routing)</li>
+                                <li class="list-inline-item">React Bootstrap</li>
+                                <li class="list-inline-item"> Custom CSS</li>
+                                <li class="list-inline-item">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/react-ecommerce/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
+                                <a href="https://github.com/seanxbrown/react-ecommerce" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="link-container d-flex justify-content-around">
-                        <a href="https://seanxbrown.github.io/react-ecommerce/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
-                        <a href="https://github.com/seanxbrown/react-ecommerce" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
-                    </div>
-                    <p class="project-description text-muted">This fully responsive app combines browser routing with state to deliver a single page application that allows users to add/remove items from a basket and navigate to other pages without losing that basket content.</p>
-                    <p class="project-description text-muted">This was a great project to work on because I improved my knowledge of React Router, state management, web design and JavaScript.</p>
-                    <p class="mb-1 fw-bold">Technologies Used:</p>
-                    <ul class="techs list-unstyled">
-                        <li>Javascript (inc. Fetch API)</li>
-                        <li>React Hooks (state and effect)</li>
-                        <li>React Router</li>
-                        <li>React Bootstrap</li>
-                        <li>CSS</li>
-                        <li>Git</li>
-                    </ul>
-                </article>
-                <article class="project col-12 col-md-6 col-lg-4">
-                    <h4 class="text-center">React Quotes Application</h4>
-                    <div>
-                        <img src="img/react_quotes.png" class="img-project w-100 border border-3 border-light" />
-                    </div>
-                    <div class="link-container d-flex justify-content-around">
-                        <a href="https://seanxbrown.github.io/react-quotes/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
-                        <a href="https://github.com/seanxbrown/react-quotes" target="_blank" class="text-decoration-none text-reset">Github Repo</a>    
-                    </div>
-                    <p class="project-description text-muted">This application allows users to either search for a quote by a specific person or receive a random quote. The user can also save the quote to a list of saved quotes (saved in local storage and displayed on a new page using React Router). Quotes can also be removed after they're saved.
-                    New additions include a page with details of the top 150 authors with the most quotes. </p>
-                    <p class="mb-1 fw-bold">Technologies Used:</p>
-                    <ul class="techs list-unstyled">
-                        <li>CSS</li>
-                        <li>Javascript (inc API calls using fetch, data saved in localstorage)</li>
-                        <li>React Router</li>
-                        <li>React Hooks (state and effect)</li>
-                        <li>React Bootstrap</li>
-                        <li>Git</li>
-                    </ul>
-                </article>
-                <article class="project col-12 col-md-6 col-lg-4">
-                    <h4 class="text-center">Agency Landing Page</h4>
-                    <div>
-                        <img src="img/agency_1.png" class="img-project w-100 border border-3 border-light"/>
-                    </div>
-                    <div class="link-container d-flex justify-content-around">
-                        <a href="https://seanxbrown.github.io/landing-page/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
-                        <a href="https://github.com/seanxbrown/landing-page" target="_blank" class="text-decoration-none text-reset">Github Repo</a>    
-                    </div>
-                    <p class="project-description text-muted">Landing page for a fictional marketing company. Improved knowledge of the design practices involved in building a modern landing page.</p>
-                    <p class="mb-1 fw-bold">Technologies Used:</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>Bootstrap & custom CSS</li>
-                        <li>Git</li>
-                    </ul>
-                </article>
-                <article class="project col-12 col-md-6 col-lg-4">
-                    <h4 class="text-center">React Weather Application</h4>
-                    <div>
-                        <img src="img/react_weather.png" class="img-project w-100 border border-light border-3"/>
-                    </div>
-                    <div class="link-container d-flex justify-content-around">
-                        <a href="https://seanxbrown.github.io/react-weather-2/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
-                        <a href="https://github.com/seanxbrown/react-weather-2" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
-                    </div>
-                    <p class="project-description text-muted">Application that consumes the OpenWeather API. The user can enter a city and receive the current weather plus an 8-day forecast. The user input is used in the API call, and the response is displayed using components, props and state.</p>
-                    <p class="mb-1 fw-bold">Technologies Used:</p>
-                    <ul class="techs list-unstyled">
-                        <li>Javascript (inc. Fetch API)</li>
-                        <li>React Hooks (state and effect)</li>
-                        <li>React Router</li>
-                        <li>React Bootstrap</li>
-                        <li>Git</li>
-                    </ul>
-                </article>
-                <article class="project col-12 col-md-6 col-lg-4">
-                    <h4 class="text-center">Apple UK Website Clone</h4>
-                    <div>
-                        <img src="img/apple_clone.png" class="img-project w-100 border border-3 border-light"/>
-                    </div>
-                    <div class="link-container d-flex justify-content-around">
-                        <a href="https://seanxbrown.github.io/apple-clone/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
-                        <a href="https://github.com/seanxbrown/apple-clone" target="_blank" class="text-decoration-none text-reset">Github Repo</a>    
-                    </div>
-                    <p class="project-description text-muted">Responsive clone of the Apple UK site. The website is developed with a mobile-first methodology and combines Bootstrap with custom CSS. This project displays images via the background-image property as opposed to an HTML img tag, which was a first for me.</p>
-                    <p class="mb-1 fw-bold">Technologies Used:</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>CSS (including Flexbox, Grid and media queries)</li>
-                        <li>Bootstrap</li>
-                        <li>Git</li>
-                    </ul>
                 </article>
 
-                <article class="project col-12 col-md-6 col-lg-4">
+                <article class="project col mb-5">
+                    <h4 class="text-center">React Quotes Application</h4>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
+                        <div class="col image-container" >
+                            <img src="img/react_quotes.png" class="img-project w-100 border border-3 border-light"/>
+                        </div>
+                        <div class="description-container align-self-center">
+                            <p class="project-description text-muted">This application allows users to either search for a quote by a specific person or receive a random quote. The user can also save the quote to a list of saved quotes (saved in local storage and displayed on a new page using React Router). Quotes can also be removed after they're saved. New additions include a page with details of the top 150 authors with the most quotes. </p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item">Javascript</li>
+                                <li class="list-inline-item">React (inc. hooks and routing)</li>
+                                <li class="list-inline-item">React Bootstrap</li>
+                                <li class="list-inline-item">Custom CSS</li>
+                                <li class="list-inline-item">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/react-quotes/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
+                                <a href="https://github.com/seanxbrown/react-quotes" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project col mb-5">
+                    <h4 class="text-center align-self-center">Agency Landing Page</h4>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
+                        <div class="col image-container" >
+                            <img src="img/agency_1.png" class="img-project w-100 border border-3 border-light"/>
+                        </div>
+                        <div class="description-container align-self-center">
+                            <p class="project-description text-muted">Landing page for a fictional marketing company. Improved knowledge of the design practices involved in building a modern landing page. </p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item">HTML</li>
+                                <li class="list-inline-item">Bootstrap and Custom CSS</li>
+                                <li class="list-inline-item">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/landing-page/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
+                                <a href="https://github.com/seanxbrown/landing-page" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project col mb-5">
+                    <h4 class="text-center">React Weather Application</h4>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
+                        <div class="col image-container" >
+                            <img src="img/react_weather.png" class="img-project w-100 border border-light border-3"/>
+                        </div>
+                        <div class="description-container align-self-center">
+                            <p class="project-description text-muted">Application that consumes the OpenWeather API. The user can enter a city and receive the current weather plus an 8-day forecast. The user input is used in the API call, and the response is displayed using components, props and state.</p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item">Javascript</li>
+                                <li class="list-inline-item">React (inc. hooks and routing)</li>
+                                <li class="list-inline-item">React Bootstrap</li>
+                                <li class="list-inline-item">Custom CSS</li>
+                                <li class="list-inline-item">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/react-weather-2/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
+                            <a href="https://github.com/seanxbrown/react-weather-2" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project col mb-5">
+                    <h4 class="text-center">Apple UK Website Clone</h4>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
+                        <div class="col image-container" >
+                            <img src="img/apple_clone.png" class="img-project w-100 border border-3 border-light"/>
+                        </div>
+                        <div class="description-container align-self-center">                                
+                            <p class="project-description text-muted">A responsive clone of the Apple UK site. The website is developed with a mobile-first methodology and combines Bootstrap with custom CSS.</p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item">HTML</li>
+                                <li class="list-inline-item">Bootstrap</li>
+                                <li class="list-inline-item">Custom CSS</li>
+                                <li class="list-inline-item">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/apple-clone/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
+                            <a href="https://github.com/seanxbrown/apple-clone" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project col mb-5">
                     <h4 class="text-center">YouTube Clone</h4>
-                    <div>
-                        <img src="img/youtube_clone.png" class="img-project w-100 border border-3 border-light"/>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
+                        <div class="col image-container" >
+                            <img src="img/youtube_clone.png" class="img-project w-100 border border-3 border-light"/>
+                        </div>
+                        <div class="description-container align-self-center">
+                            <p class="project-description text-muted">A responsive clone of the Apple UK site. The website is developed with a mobile-first methodology and combines Bootstrap with custom CSS.</p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item">HTML</li>
+                                <li class="list-inline-item">CSS</li>
+                                <li class="list-inline-item">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/youtube_player/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
+                                <a href="https://github.com/seanxbrown/youtube_player" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="link-container d-flex justify-content-around">
-                        <a href="https://seanxbrown.github.io/youtube_player/" target="_blank" class="text-decoration-none text-reset">Live Site</a>
-                        <a href="https://github.com/seanxbrown/youtube_player" target="_blank" class="text-decoration-none text-reset">Github Repo</a>
-                    </div>
-                    <p class="project-description text-muted">Clone of the YouTube video player page. This project was designed to improve knowledge of Flexbox and general CSS skills. Also used HTML to embed an actual YouTube video livestream for added authenticity.</p>
-                    <p class="mb-1 fw-bold">Technologies Used:</p>
-                    <ul class="techs list-unstyled">
-                        <li>HTML</li>
-                        <li>CSS (including Flexbox)</li>
-                        <li>Git</li>
-                    </ul>
-                </article>                    
+                </article>                
             </div>                  
         </section>
 
