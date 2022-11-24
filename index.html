@@ -34,6 +34,29 @@
             <h2 class="text-center mt-5 mb-5 fw-bold">Projects</h2>
             <div class="row row-cols-1" id="projects-container">
                 <article class="project col mb-5">
+                    <h4 class="text-center fw-bold">Metis - Exercise Tracker</h4>
+                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
+                        <div class="col image-container" >
+                            <img src="img/firebase_exercise.png" class="img-project w-100 border border-3 border-light"/>
+                        </div>
+                        <div class="description-container align-self-center">
+                            <p class="project-description text-muted">This is an app you can use to log your exercises and workouts and view them whenever you want to! You can create an account using Firebase Authentication, and Firebase's Realtime Database allows users to view their workout history across multiple devices.</p>
+                            <ul class="techs list-inline">
+                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Firebase</li>
+                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React</li>
+                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Javascript</li>
+                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React Bootstrap</li>
+                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
+                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
+                            </ul>
+                            <div class="link-container d-flex justify-content-around">
+                                <a href="https://seanxbrown.github.io/youtube_player/" target="_blank" class="text-decoration-none text-reset btn btn-outline-primary rounded-pill">Live Site</a>
+                                <a href="https://github.com/seanxbrown/youtube_player" target="_blank" class="text-decoration-none text-reset btn btn-outline-primary rounded-pill">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>     
+                <article class="project col mb-5">
                     <h4 class="text-center fw-bold">React Ecommerce Site</h4>
                     <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
                         <div class="col image-container" >
@@ -147,26 +170,7 @@
                     </div>
                 </article>
 
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold">YouTube Clone</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
-                        <div class="col image-container" >
-                            <img src="img/youtube_clone.png" class="img-project w-100 border border-3 border-light"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">A responsive clone of the Apple UK site. The website is developed with a mobile-first methodology and combines Bootstrap with custom CSS.</p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">HTML</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="link-container d-flex justify-content-around">
-                                <a href="https://seanxbrown.github.io/youtube_player/" target="_blank" class="text-decoration-none text-reset btn btn-outline-primary rounded-pill">Live Site</a>
-                                <a href="https://github.com/seanxbrown/youtube_player" target="_blank" class="text-decoration-none text-reset btn btn-outline-primary rounded-pill">Github Repo</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>                
+           
             </div>                  
         </section>
 
@@ -193,12 +197,15 @@
                 </article>
             </div>                
         </section>
-        <section id="currentProjects" class="text-center border-bottom border-1 border-dark py-5">
+        <section id="currentProjects" class="border-bottom border-1 border-dark py-5 px-4">
             <h3 class="text-center fw-bold">Upcoming Projects</h3>
-            <p>I'm currently working on an exercise logger application with a React frontend and Firebase Realtime Database, with authentication provided by Firebase Authentication</p>
-            <p>Users will be able to create an account and track their workout history across devices with full CRUD capability.</p>
-
-
+            <p>I'm currently working on an adding features to my exercise tracker app, including:</p>
+            <ul>
+                <li>Adding filter functionality to workout list</li>
+                <li>Add ability for users to update their profiles</li>
+                <li>Add change/retrieve password functionality</li>
+                <li>Add ability for an exercise to be tagged as a record or personal best. Personal bests will be visible in a separate window.</li>
+            </ul>
         </section>
 
         <section id="contact" class="my-5 p-5">
