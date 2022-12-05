@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #000;
 }
 
 #navbar {
@@ -16,7 +17,7 @@ body {
 
 #landing {
     height: 100vh;
-    background-image: linear-gradient(to right,#000A57, #011188 );
+    background-color: #000;
     color: #FFF;
     padding: 0 10vw;
 }
@@ -55,7 +56,7 @@ body {
 }
 
 #skills {
-    background-image: linear-gradient(to right,#000A57, #011188 );
+    background-color: #000;
 }
 
 .skill {
@@ -66,4 +67,16 @@ body {
 
 .description-container {
     margin: 0.5rem 0;
+}
+
+#projects {
+    background-color: #000;
+}
+
+div.link-container > a.btn-outline-light {
+    color: #FFF;
+}
+
+div.link-container > a.btn-outline-light:hover {
+    color: #000;
 }
