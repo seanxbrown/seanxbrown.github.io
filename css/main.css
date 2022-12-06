@@ -3,6 +3,10 @@ body {
     background-color: #000;
 }
 
+:root {
+    --hover-color: #A37E00;
+}
+
 #navbar {
     background-color: #000;
 }
@@ -12,7 +16,7 @@ body {
 }
 
 .nav-link:hover {
-    color:#A37E00
+    color: var(--hover-color)
 }
 
 #landing {
@@ -73,19 +77,13 @@ body {
     background-color: #000;
 }
 
-div.link-container > a.btn-outline-light {
+.cta-button {
     color: #FFF;
 }
 
-div.link-container > a.btn-outline-light:hover {
+.cta-button:hover{
     color: #000;
+    background-color: var(--hover-color);
+    border-color: var(--hover-color)
 }
 
-button[type=submit] {
-    color: #FFF;
-}
-
-button[type=submit]:hover {
-    background-color: #FFF;
-    color: #000;
-}
