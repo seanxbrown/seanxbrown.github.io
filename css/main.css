@@ -80,3 +80,12 @@ div.link-container > a.btn-outline-light {
 div.link-container > a.btn-outline-light:hover {
     color: #000;
 }
+
+button[type=submit] {
+    color: #FFF;
+}
+
+button[type=submit]:hover {
+    background-color: #FFF;
+    color: #000;
+}
