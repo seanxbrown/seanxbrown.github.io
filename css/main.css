@@ -67,6 +67,22 @@ body {
     margin-bottom: 1.5rem;
     height: 128px;
     width: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.skill > img {
+    display: block;
+}
+
+ 
+.skill > p {
+    margin: auto auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .description-container {
