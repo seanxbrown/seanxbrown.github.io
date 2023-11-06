@@ -1,314 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio Site</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link href="/css/main.css" rel="stylesheet"/>
-    </head>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sean Brown Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <body id="home">
-        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-light p-3" id="navbar">
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-content">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section id="landing" class="d-flex flex-column justify-content-center align-items-center border-bottom border-1 border-dark">
-            <h1 class="fw-bold display-1"><span id="startOfHeader" class="headerText">Hi,</span> <span id="restOfHeader" class="headerText">I'm Sean</span></h1>
-            <p class="landingText fs-5 fw-light display-5">I love using different technologies to build applications that are fun to use and solve user challenges. Most recently, I've been building different types of applications with React, Bootstrap and Firebase.</p>
-        </section>
-        <section id="skills" class="mb-5 py-5 container-fluid border-bottom border-1 border-dark">
-            <h2 class="text-center fw-bold text-light">Skills</h2>
-            <div id="skills-container" class="row text-center mt-5 overflow-hidden justify-content-center align-items-center text-light">
-                <article class="skill col-12 col-md-4">
-                    <img src="/img/html-5.png" class="w-100">
-                    <p>HTML</p>
-                </article>
-                <article class="skill col-12 col-md-4">
-                    <img src="/img/CSS3_logo.svg" class="w-100">
-                    <p>CSS</p>
-                </article>
-                <article class="skill col-12 col-md-4">
-                    <img src="/img/Unofficial_JavaScript_logo_2.svg" class="w-100">
-                    <p>Javascript</p>
-                </article>
-                <article class="skill col-12 col-md-4">
-                    <img src="/img/bootstrap.png" class="w-100">
-                    <p>Bootstrap</p>
-                </article>
-                <article class="skill col-12 col-md-4 align-self-start">
-                    <img src="/img/React-icon.svg.png" class="w-100">
-                    <p class="align">React</p>
-                </article>
-                <article class="skill col-12 col-md-4">
-                    <img src="/img/Git-Icon-1788C.png" class="w-100">
-                    <p>Git</p>
-                </article>
-                <article class="skill col-12 col-md-4">
-                    <img src="/img/firebase_logo.png" class="w-75">
-                    <p>Firebase</p>
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+			</header>
 
-                </article>
-            </div>                
-        </section>
+		<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul class="links">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#footer">Contact</a></li>
+				</ul>
+			</nav>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+					<section id="intro" class="wrapper featured style1">
+						<div class="inner">
+							<div class="content">
+								<section id="intro-text">
+									<h1>Hi, I'm Sean</h1>
+									<p>I love using different technologies to build applications that are fun to use and solve user challenges. Most recently, I've been building different types of applications with React, Bootstrap and Firebase.</p>
+								</section>
+							</div>
+						</div>
+					</section>
 
-        <section id="projects" class="container border-bottom border-1 border-dark">
-            <h2 class="text-center mt-5 mb-5 fw-bold text-light">Projects</h2>
-            <div class="row row-cols-1" id="projects-container">
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">Metis - Exercise Tracker</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
-                        <div class="col image-container" >
-                            <img src="img/firebase_exercise.png" class="img-project w-100 border border-3 border-light"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">This is a CRUD app that you can use to log your workouts and view them across multiple devices! It uses React on the frontend and Firebase to manage authentication. Data is stored in Firebase's Realtime Database.</p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Firebase</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Javascript</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React Bootstrap</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/firebase-exercise/" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/firebase-exercise/tree/main" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+				<!-- One -->
+					<section class="wrapper style2 special" id="skills">
+						<div class="inner">
+							<header>
+								<h2>Skills</h2>
+							</header>
+							<ul class="icons major style2">
+								<li><span class="icon brands style1 fa-html5"><span class="label">HTML5</span></span></li><li>
+								<span class="icon brands style1 fa-css3"><span class="label">CSS</span></span></li><li>
+								<span class="icon brands style1 fa-js"><span class="label">JavaScript</span></span></li><li>
+								<span class="icon brands style1 fa-bootstrap"><span class="label">Bootstrap</span></span></li><li>
+								<span class="icon brands style1 fa-react"><span class="label">React</span></span></li>
+							</ul>
+						</div>
+					</section>
+				<!-- Two -->
+					<section class="wrapper style1 special" id="projects">
+						<div class="inner">
+							<header>
+								<h2>Projects</h2>
+							</header>
+							<section class="spotlight">
+								<span class="image"><img src="img/space_images2.png" alt="" /></span>
+								<div class="content">
+									<header>
+										<h3>Space Image App</h3>
+									</header>
+									<p>This app lets you search the NASA astronomy picture of the day database and save images to create stunning galleries. Features authentication and a database connection.</p>
+									<ul>
+										<li>Firebase</li>
+										<li>React</li>
+										<li>Javascript</li>
+										<li>React Bootstrap</li>
+										<li>CSS</li>
+										<li>Git</li>
+									</ul>
+									<footer>
+										<ul class="actions">
+											<li><a href="https://seanxbrown.github.io/space-image-app/" target="_blank" class="button">Live Site</a></li>
+											<li><a href="https://github.com/seanxbrown/space-image-app" target="_blank" class="button">GitHub Repo</a></li>
+										</ul>
+									</footer>
+								</div>
+							</section>
+							<section class="spotlight">
+								<span class="image"><img src="img/firebase_exercise.png" alt="" /></span>
+								<div class="content">
+									<header>
+										<h3>Metis - Exercise Tracker</h3>
+									</header>
+									<p>This is a CRUD app that you can use to log your workouts and view them across multiple devices! It uses React on the frontend and Firebase to manage authentication. Data is stored in Firebase's Realtime Database.</p>
+									<ul>
+										<li>Firebase</li>
+										<li>React</li>
+										<li>Javascript</li>
+										<li>React Bootstrap</li>
+										<li>CSS</li>
+										<li>Git</li>
+									</ul>
+									<footer>
+										<ul class="actions">
+											<li><a href="https://seanxbrown.github.io/firebase-exercise/" target="_blank" class="button">Live Site</a></li>
+											<li><a href="https://github.com/seanxbrown/firebase-exercise/tree/main" target="_blank" class="button">GitHub Repo</a></li>
+										</ul>
+									</footer>
+								</div>
+							</section>
+							<section class="spotlight">
+								<span class="image"><img src="img\react_ecommerce.png" alt="" /></span>
+								<div class="content">
+									<header>
+										<h3>React Ecommerce Site</h3>
+									</header>
+									<p>This is a fully responsive e-commerce app simulation for a fictional business - products are generated using the Fake Store API. Users can add / remove products to a basket and "checkout" with custom quantities; totals and subtotals are calculated and displayed automatically.</p>
+									<ul class="techs list-inline">
+										<li>Javascript</li>
+										<li>React</li>
+										<li>React Bootstrap</li>
+										<li>CSS</li>
+										<li>Git</li>
+									</ul>
+									<footer>
+										<ul class="actions">
+											<li><a href="https://seanxbrown.github.io/react-ecommerce" target="_blank" class="button">Live Site</a></li>
+											<li><a href="https://github.com/seanxbrown/react-ecommerce" target="_blank" class="button">Github Repo</a></li>
+										</ul>
+									</footer>
+								</div>
+							</section>
+							<section class="spotlight">
+								<span class="image"><img src="img\apple_clone.png" alt="" /></span>
+								<div class="content">
+									<header>
+										<h3>Apple UK Website Clone</h3>
+									</header>
+									<p>A responsive clone of the Apple UK front page. The website is developed with a mobile-first methodology and combines Bootstrap with custom CSS.</p>
+									<ul>
+										<li>HTML</li>
+										<li>Bootstrap</li>
+										<li>CSS</li>
+										<li>Git</li>
+									</ul>
+									<footer>
+										<ul class="actions">
+											<li><a href="https://seanxbrown.github.io/apple-clone" target="_blank" class="button">Live Site</a></li>
+											<li><a href="https://github.com/seanxbrown/apple-clone" target="_blank"  class="button">Github Repo</a></li>
+										</ul>
+									</footer>
+								</div>
+							</section>
+							<section class="spotlight">
+								<span class="image"><img src="img\agency_2.png" alt="" /></span>
+								<div class="content">
+									<header>
+										<h3>Agency Landing Page</h3>
+									</header>
+									<p>Landing page for a fictional marketing company. Improved knowledge of the design practices involved in building a modern landing page.</p>
+									<ul>
+										<li>HTML</li>
+										<li>Bootstrap</li>
+										<li>CSS</li>
+										<li>Git</li>
+									</ul>
+									<footer>
+										<ul class="actions">
+											<li><a href="https://seanxbrown.github.io/landing-page" target="_blank" class="button">Live Site</a></li>
+											<li><a href="https://github.com/seanxbrown/landing-page" target="_blank" class="button">Github Repo</a></li>
+										</ul>
+									</footer>
+								</div>
+							</section>
+						</div>
+					</section>
+				<!-- Footer -->
+					<section id="footer" class="wrapper split style2">
+						<div class="inner">
+							<section>
+								<header>
+									<h3>Contact</h3>
+								</header>
+								<p>If you have any questions or would like to send me a message, please get in touch here:</p>
+								<ul class="icons">
+									<li><a href="https://github.com/seanxbrown/" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+								<form method="POST" action="mailto:sean.brown.90@live.co.uk" class="text-center mb-5">
+									<ul class="actions">
+										<li><button type="submit" class="btn btn-outline-light p-3 cta-button">Send Message</button></li>
+									</ul>
+								</form>
+							</section>
+						</div>
+					</section>
+			</div>
 
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">React Ecommerce Site</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
-                        <div class="col image-container" >
-                            <img src="img/react_ecommerce.png" class="img-project w-100 border border-3 border-light"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">This is a fully responsive e-commerce app simulation for a fictional business - products are generated using the Fake Store API. Users can add / remove products to a basket and "checkout" with custom quantities; totals and subtotals are calculated and displayed automatically.</p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Javascript</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React Bootstrap</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/react-ecommerce" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/react-ecommerce" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">Apple UK Website Clone</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
-                        <div class="col image-container" >
-                            <img src="img/apple_clone.png" class="img-project w-100 border border-3 border-light"/>
-                        </div>
-                        <div class="description-container align-self-center">                                
-                            <p class="project-description text-muted">A responsive clone of the Apple UK front page. The website is developed with a mobile-first methodology and combines Bootstrap with custom CSS.</p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">HTML</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Bootstrap</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/apple-clone" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/apple-clone" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">React Quotes Application</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
-                        <div class="col image-container" >
-                            <img src="img/react_quotes.png" class="img-project w-100 border border-3 border-light"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">This application allows users to either search for a quote by a specific person or receive a random quote. The user can also save the quote to a list of saved quotes (saved in local storage and displayed on a new page using React Router). Quotes can also be removed after they're saved. New additions include a page with details of the top 150 authors with the most quotes. </p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Javascript</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React Bootstrap</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/react-quotes" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/react-quotes" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project col mb-5 ">
-                    <h4 class="text-center align-self-center fw-bold text-light">Agency Landing Page</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
-                        <div class="col image-container" >
-                            <img src="img/agency_1.png" class="img-project w-100 border border-3 border-light"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">Landing page for a fictional marketing company. Improved knowledge of the design practices involved in building a modern landing page. </p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">HTML</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Bootstrap</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/landing-page" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/landing-page" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">React Weather Application</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
-                        <div class="col image-container" >
-                            <img src="img/react_weather.png" class="img-project w-100 border border-light border-3"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">Application that consumes the OpenWeather API. The user can enter a city and receive the current weather plus an 8-day forecast. The user input is used in the API call, and the response is displayed using components, props and state.</p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Javascript</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">React Bootstrap</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/react-weather-2" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/react-weather-2" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                
-            </div>                  
-        </section>
-
-        <section id="cssChallenges" class="text-light border-bottom border-1 border-dark py-5 px-4">
-            <h3 class="text-center fw-bold">CSS Challenges</h3>
-            <div id="cssChallengeContainer" class="row row-cols-1">
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">Product Preview Card Component</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2 flex-row-reverse">
-                        <div class="col image-container" >
-                            <img src="img/css_preview_card_image.png" class="img-project w-100 border border-light border-3"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">Recreated a card component design for mobile and desktop. <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank">Here's a link to the original challenge and design resources.</a></p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">HTML</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/preview-card/" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/preview-card" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="project col mb-5">
-                    <h4 class="text-center fw-bold text-light">NFT Card</h4>
-                    <div class="project-content-div row row-cols-xs-1 row-cols-lg-2">
-                        <div class="col image-container" >
-                            <img src="img/css_nft_card.png" class="img-project w-100 border border-light border-3"/>
-                        </div>
-                        <div class="description-container align-self-center">
-                            <p class="project-description text-muted">NFT card design with several hover effects. <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">Here's a link to the original challenge and design resources.</a></p>
-                            <ul class="techs list-inline">
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">HTML</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">CSS</li>
-                                <li class="list-inline-item rounded-pill bg-dark text-light py-1 px-3 mt-3">Git</li>
-                            </ul>
-                            <div class="row gy-3 link-container d-flex justify-content-around">
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://seanxbrown.github.io/nft-card/" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Live Site</a>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <a href="https://github.com/seanxbrown/nft-card/" target="_blank" class="cta-button w-100 text-decoration-none btn btn-outline-light">Github Repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        
-        <section id="currentProjects" class="text-light border-bottom border-1 border-dark py-5 px-4">
-            <h3 class="text-center fw-bold">Upcoming Projects</h3>
-            <p>I'm currently working on a bug tracker application using the following tech stack:</p>
-            <ul>
-                <li class="list-style-none">TypeScript</li>
-                <li class="list-style-none">React</li>
-                <li class="list-style-none">Firebase Authentication</li>
-                <li class="list-style-none">Firebase Firestore Database</li>
-            </ul>
-            <p>The application will support multiple user roles, allow users to submit tickets to projects, assign user roles (if permitted), create projects and more.</p>
-
-        </section>
-
-        <section id="contact" class="my-5 p-5">
-            <h3 class="text-center fw-bold text-light">Contact</h3>
-            <p class="text-center text-light">If you have any questions or would like to send me a message, please get in touch using the link below:</p>
-            <form method="POST" action="mailto:sean.brown.90@live.co.uk" class="text-center mb-5">
-                <button type="submit" class="btn btn-outline-light p-3 cta-button">Send Message</button>
-            </form>
-        </section>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="/js/main.js"></script>
-    </body>
-</html> 
+	</body>
+</html>
